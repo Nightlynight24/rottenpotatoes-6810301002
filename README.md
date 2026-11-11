@@ -2,7 +2,7 @@
 
 Template repository for Lab L1 (310-2205 Software Engineering, semester 2/2569).
 
-![ci](https://github.com/<you>/<repo>/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/Nightynight24/rottenpotatoes-6810301002/actions/workflows/ci.yml/badge.svg)
 
 แก้ `<you>/<repo>` ในบรรทัดบนเป็นชื่อ GitHub และชื่อ repository ของคุณ
 (Replace `<you>/<repo>` above with your GitHub user and repository name.)
@@ -55,15 +55,15 @@ Lab L1 checklist.
 
 Where the tools come from. ทุกรายการดาวน์โหลดจากผู้พัฒนาโดยตรงผ่าน HTTPS (checked 6 Nov 2026).
 
-| เครื่องมือ (tool) | ผู้ดูแล (maintainer) | แหล่ง (source) |
-|---|---|---|
-| JDK 25 Eclipse Temurin | Eclipse Adoptium | adoptium.net; Windows `winget install EclipseAdoptium.Temurin.25.JDK`; macOS `brew install --cask temurin@25` |
-| Git | Git project, Git for Windows | git-scm.com (macOS: Xcode Command Line Tools) |
-| IntelliJ IDEA (free, unified since 2025.3) | JetBrains | jetbrains.com/idea |
-| Apache Maven 3.9.11 | Apache Software Foundation | `mvnw` downloads it from repo.maven.apache.org and checks the SHA-256 pinned in `.mvn/wrapper/maven-wrapper.properties` |
-| Spring Boot 4.1.2, JUnit 6.0.3, AssertJ 3.27.7, Mockito 5.23.0, JaCoCo 0.8.14, maven-checkstyle-plugin 3.6.0 | Spring team (Broadcom), JUnit, AssertJ, Mockito, EclEmma, Apache Maven, Checkstyle | Maven Central, versions from the Spring Boot BOM (`./mvnw dependency:tree`) |
-| GitHub Actions `actions/checkout@v7`, `actions/setup-java@v6`, `actions/upload-artifact@v7` | GitHub | github.com/actions |
-| Dev container `mcr.microsoft.com/devcontainers/java:25`; VS Code extensions Extension Pack for Java (Microsoft), Spring Boot Tools (VMware), Cucumber (Cucumber) | Microsoft, VMware, Cucumber | mcr.microsoft.com, marketplace.visualstudio.com |
+| เครื่องมือ (tool)                                                                                                                                                | ผู้ดูแล (maintainer)                                                               | แหล่ง (source)                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| JDK 25 Eclipse Temurin                                                                                                                                           | Eclipse Adoptium                                                                   | adoptium.net; Windows `winget install EclipseAdoptium.Temurin.25.JDK`; macOS `brew install --cask temurin@25`           |
+| Git                                                                                                                                                              | Git project, Git for Windows                                                       | git-scm.com (macOS: Xcode Command Line Tools)                                                                           |
+| IntelliJ IDEA (free, unified since 2025.3)                                                                                                                       | JetBrains                                                                          | jetbrains.com/idea                                                                                                      |
+| Apache Maven 3.9.11                                                                                                                                              | Apache Software Foundation                                                         | `mvnw` downloads it from repo.maven.apache.org and checks the SHA-256 pinned in `.mvn/wrapper/maven-wrapper.properties` |
+| Spring Boot 4.1.2, JUnit 6.0.3, AssertJ 3.27.7, Mockito 5.23.0, JaCoCo 0.8.14, maven-checkstyle-plugin 3.6.0                                                     | Spring team (Broadcom), JUnit, AssertJ, Mockito, EclEmma, Apache Maven, Checkstyle | Maven Central, versions from the Spring Boot BOM (`./mvnw dependency:tree`)                                             |
+| GitHub Actions `actions/checkout@v7`, `actions/setup-java@v6`, `actions/upload-artifact@v7`                                                                      | GitHub                                                                             | github.com/actions                                                                                                      |
+| Dev container `mcr.microsoft.com/devcontainers/java:25`; VS Code extensions Extension Pack for Java (Microsoft), Spring Boot Tools (VMware), Cucumber (Cucumber) | Microsoft, VMware, Cucumber                                                        | mcr.microsoft.com, marketplace.visualstudio.com                                                                         |
 
 ถ้าเพิ่ม dependency ใหม่ ให้ตรวจผู้ดูแลและแหล่งแบบเดียวกัน แล้วบันทึกใน `docs/L1.md` (Before adding a dependency, check its maintainer and source the same way and record it.)
 
